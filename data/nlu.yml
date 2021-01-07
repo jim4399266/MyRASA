@@ -1,0 +1,160 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+# 健身房咨询
+- synonym: 后厂健身学院
+  examples: |
+    - 后厂健身
+    - 后厂健身房
+    - 后厂
+
+- intent: greet_cn
+  examples: |
+    - 你好啊
+    - 哈喽
+    - 嗨
+    - 在不在
+    - 在吗
+    - 有没有人
+    - 我想询问一下
+    - 我想问一问
+
+- intent: query_name
+  examples: |
+    - 你们叫什么名字？
+    - 你们是什么健身房
+#    - 你们是[后厂健身]吗？{'entity': "organization", 'value':"后厂健身学院"}
+
+- intent: query_loc
+  examples: |
+    - 你们在哪里？
+    - 地址是什么？
+    - 在什么地方？
+
+- intent: query_month_price
+  examples: |
+    - 月卡价钱怎么样？
+    - 月卡办卡要怎么办？
+    - 月卡什么价位？
+    - 月卡多少钱？
+    - 咨询一下月卡的价格。
+
+- intent: query_year_price
+  examples: |
+    - 年卡价钱怎么样？
+    - 年卡办卡要怎么办？
+    - 年卡什么价位？
+    - 年卡多少钱？
+    - 咨询一下年卡的价格。
+
+
+- intent: apply
+  examples: |
+    - 我要办卡
+    - 好的
+    - 就这样
+    - 我确定办卡
+
+- intent: not_apply
+  examples: |
+    - 太贵了
+    - 我不办了
+    - 不行
+    - 算了
+    - 我再考虑考虑
+
+
+
+
+
+

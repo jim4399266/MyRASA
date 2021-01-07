@@ -1,0 +1,57 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- greet_cn
+- query_name
+- query_loc
+- query_month_price
+- query_year_price
+- apply
+- not_apply
+entities:
+- card_type
+slots:
+  card_type:
+    type: categorical
+    influence_conversation: false
+    values:
+    - 月卡
+    - 年卡
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_greet_cn:
+  - text: 你好！很高兴为您服务！
+  - text: 有什么可以帮您的？
+  - text: 早上好！
+  utter_query_name:
+  - text: 这里是后厂健身学院。
+  utter_query_loc:
+  - text: 我们的地址是A大街111号。
+  utter_month:
+  - text: 月卡的价钱是300每月。
+  utter_year:
+  - text: 年卡的价钱是2000每年。
+  utter_apply:
+  - text: 好的，接下来给您办理入籍手续。
+  utter_not_apply:
+  - text: 希望您再好好考虑一下。
